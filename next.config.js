@@ -1,7 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    appDir: true,
+  reactStrictMode: true,
+  webpack: config => {
+    const newConfig = {
+      ...config,
+      module: {
+        rules: [
+          ...config.module.rules,
+          {
+            test: /\.svg$/i,
+            issuer: /\.[jt]sx?$/,
+            use: ['@svgr/webpack'],
+          },
+        ],
+      },
+    };
+    return newConfig;
   },
 }
 
