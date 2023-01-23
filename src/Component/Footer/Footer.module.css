@@ -1,0 +1,10 @@
+.footer {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'IBM-ExtraLight';
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.4);
+}

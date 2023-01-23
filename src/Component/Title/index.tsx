@@ -1,3 +1,5 @@
+import cn from 'classnames';
+
 import styles from './Title.module.css';
 
 import { WordMarkLogo } from '~/assets';
