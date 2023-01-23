@@ -2,8 +2,10 @@
 
 body {
   width: 100vw;
-  height: 100vh;
-  background-color: rgb(242, 242, 242);
+  height: auto;
+  background-color: #fff;
+  background-image: url("/wave.svg");
+  background-size: cover;
 }
 
 @font-face {
