@@ -9,6 +9,7 @@
 @media (max-width: 645px) {
   .list {
     width: 90% !important;
+    height: auto !important;
     display: block;
   }
 }

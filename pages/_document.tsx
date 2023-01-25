@@ -9,7 +9,10 @@ export default class MyDocument extends Document {
           <meta name="description" content="멋쟁이사자처럼 인천대학교" />
           <meta property="og:title" content="멋쟁이사자처럼 인천대학교" />
           <meta property="og:image" content="" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, user-scalable=no"
+          />
         </Head>
         <body>
           <Main />
