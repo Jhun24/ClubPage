@@ -40,7 +40,7 @@ const Home = () => {
         <Content title="카카오톡" animation="fadeIn">
           <Link type="kakaotalk" url={KakaoTalkLink} />
         </Content>
-        <Content title="인스타그렘" animation="fadeIn">
+        <Content title="인스타그램" animation="fadeIn">
           <Link type="instagram" url={InstagramLink} />
         </Content>
         <Content title="마이캠퍼스" animation="fadeIn">
