@@ -1,0 +1,13 @@
+.link_box {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link_box svg {
+  width:80px;
+  margin-left: 20px;
+}

@@ -1,9 +1,11 @@
 import styles from './Footer.module.css';
 
+import { Copyright } from '~/const';
+
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <p>@Copyright: Jhun24</p>
+      <p>@Copyright: {Copyright}</p>
     </div>
   );
 };

@@ -35,6 +35,9 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'prettier/prettier': ['error', prettierConfig],
     'react/jsx-props-no-spreading': 'off',
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "a" ],
+    }],
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'react/require-default-props': 'off',

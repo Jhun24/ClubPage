@@ -1,4 +1,5 @@
-import { Content, Footer, List, Title } from '~/components';
+import { Content, Footer, Link, List, Title } from '~/components';
+import { InstagramLink, KakaoTalkLink, MyCampusLink } from '~/const';
 
 const Home = () => {
   return (
@@ -21,8 +22,21 @@ const Home = () => {
       </List>
 
       <List height={350} width={1000} justifyContent="center">
-        <Content title="박스 3" animation="fadeInUp">
+        <Content title="박스 3" animation="fadeIn">
           <h2>내용</h2>
+        </Content>
+      </List>
+
+      <List height={200} width={1000} justifyContent="space-between">
+        <Content title="연락하기" animation="fadeIn" />
+        <Content title="카카오톡" animation="fadeIn">
+          <Link type="kakaotalk" url={KakaoTalkLink} />
+        </Content>
+        <Content title="인스타그렘" animation="fadeIn">
+          <Link type="instagram" url={InstagramLink} />
+        </Content>
+        <Content title="마이캠퍼스" animation="fadeIn">
+          <Link type="mycampus" url={MyCampusLink} />
         </Content>
       </List>
       <Footer />
