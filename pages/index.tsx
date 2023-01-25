@@ -4,6 +4,7 @@ import {
   Link,
   List,
   SimpleListView,
+  SimpleText,
   Title,
 } from '~/components';
 import { InstagramLink, KakaoTalkLink, MyCampusLink } from '~/const';
@@ -19,17 +20,17 @@ const Home = () => {
       </List>
 
       <List height={200} width={1000} justifyContent="space-between">
-        <Content title="박스 1" animation="fadeInLeft">
-          <h2>내용</h2>
+        <Content title="모집 여부" animation="fadeInLeft">
+          <SimpleText text="현재 모집중이 아닙니다" />
         </Content>
 
-        <Content title="박스 2" animation="fadeInRight">
-          <h2>내용</h2>
+        <Content title="현재 일정" animation="fadeInRight">
+          <SimpleText text="11기 운영진 교육" type="semiBold" />
         </Content>
       </List>
 
       <List height={350} width={1000} justifyContent="center">
-        <Content title="박스 3" animation="fadeIn">
+        <Content title="활동 사진" animation="fadeIn">
           <h2>내용</h2>
         </Content>
       </List>

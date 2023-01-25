@@ -1,0 +1,34 @@
+.medium {
+  font-family: 'IBM-Medium';
+  font-size: 20px;
+}
+
+.bold {
+  font-family: 'IBM-Bold';
+  font-size: 24px;
+}
+
+.extraLight {
+  font-family: 'IBM-ExtraLight';
+  font-size: 20px;
+}
+
+.light {
+  font-family: 'IBM-Light';
+  font-size: 20px;
+}
+
+.regular {
+  font-family: 'IBM-Regular';
+  font-size: 20px;
+}
+
+.semiBold {
+  font-family: 'IBM-SemiBold';
+  font-size: 22px;
+}
+
+.thin {
+  font-family: 'IBM-Thin';
+  font-size: 20px;
+}
