@@ -1,13 +1,20 @@
-import { Content, Footer, Link, List, Title } from '~/components';
+import {
+  Content,
+  Footer,
+  Link,
+  List,
+  SimpleListView,
+  Title,
+} from '~/components';
 import { InstagramLink, KakaoTalkLink, MyCampusLink } from '~/const';
 
 const Home = () => {
   return (
     <>
       <Title />
-      <List height={350} width={1000} justifyContent="center">
+      <List height={400} width={1000} justifyContent="center">
         <Content title="공지 사항" animation="fadeInDown">
-          <h2>내용</h2>
+          <SimpleListView />
         </Content>
       </List>
 
