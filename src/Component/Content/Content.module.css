@@ -6,14 +6,10 @@
   box-shadow: 5px 4px 3px 1px rgba(0, 0, 0, 0.2);
 }
 
-.content h1 {
+.content .content_title {
   margin: 20px;
   font-family: 'IBM-Bold';
   font-size: 32px;
-}
-
-.content h2 {
-  margin: 20px;
 }
 
 @media (max-width: 645px) {
@@ -23,5 +19,10 @@
     /* padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom:20px; */
+  }
+
+  .content .content_title {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

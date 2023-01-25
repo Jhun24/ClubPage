@@ -1,3 +1,4 @@
+import ArrowToRight from './icon/arrowToRight.svg';
 import Facebook from './icon/facebook.svg';
 import Favicon from './logo/logo_symbol_find.svg';
 import Instagram from './icon/instagram.svg';
@@ -7,6 +8,7 @@ import None from './icon/none.svg';
 import WordMarkLogo from './logo/Logo_wordmark.svg';
 
 export {
+  ArrowToRight,
   Facebook,
   Favicon,
   Instagram,

@@ -1,6 +1,7 @@
 import {
   Content,
   Footer,
+  ImageSlider,
   Link,
   List,
   SimpleListView,
@@ -29,9 +30,9 @@ const Home = () => {
         </Content>
       </List>
 
-      <List height={350} width={1000} justifyContent="center">
+      <List height={630} width={1000} justifyContent="center">
         <Content title="활동 사진" animation="fadeIn">
-          <h2>내용</h2>
+          <ImageSlider />
         </Content>
       </List>
 

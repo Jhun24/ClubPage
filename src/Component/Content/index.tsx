@@ -12,7 +12,7 @@ interface ContentProps {
 const Content = ({ title, animation = 'fadeIn', children }: ContentProps) => {
   return (
     <div className={cn(styles.content, animation, 'animated')}>
-      <h1>{title}</h1>
+      <h1 className={styles.content_title}>{title}</h1>
       {children}
     </div>
   );
