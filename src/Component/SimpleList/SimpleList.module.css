@@ -4,6 +4,10 @@
   margin-left: 20px;
 }
 
+.simple_list_box > a {
+  width: 100%;
+}
+
 .simple_list {
   width: 100%;
   height: 60px;
@@ -12,19 +16,48 @@
   border-bottom: 1px solid rgb(234, 234, 234);
 }
 
-.simple_list:last-child {
-  border-bottom: none;
-}
-
 .simple_list_index {
   font-family: 'IBM-SemiBold';
   font-size: 24px !important;
   user-select: none;
   margin: 0 !important;
+  color: black;
 }
 
 .simple_list_title {
   font-family: 'IBM-Medium';
   font-size: 18px;
   margin-left: 15px;
+  color: black;
+}
+
+.simple_list_text_box {
+  width: calc(100% - 40px);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  user-select: none;
+}
+
+.simple_list_text_box > a {
+  width: 100%;
+}
+
+.simple_list_text_box .simple_list_link_box {
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.simple_list_text_box .simple_list_link_box > h2 {
+  color: black;
+  font-family: 'IBM-SemiBold';
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.simple_list_text_box .simple_list_link_box > svg {
+  width: 24px;
 }

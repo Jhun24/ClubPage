@@ -12,7 +12,7 @@ const ListPage = () => {
     <>
       <Nav />
       <Title />
-      <List width={1000} height={800}>
+      <List width={1000} height={1200}>
         <Content title="공지 사항" animation="fadeIn">
           <SimpleListView />
         </Content>

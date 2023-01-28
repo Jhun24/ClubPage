@@ -1,8 +1,10 @@
 import {
+  ArrowContent,
   Content,
   Footer,
   ImageSlider,
-  Link,
+  ContactUs,
+  LinkPreviewNoToolTip,
   List,
   Poster,
   SimpleListView,
@@ -15,10 +17,16 @@ const Home = () => {
   return (
     <>
       <Title />
-      <List height={400} width={1000} justifyContent="center">
+      <List height={430} width={1000} justifyContent="center">
         <Content title="공지 사항" animation="fadeInDown">
           <SimpleListView />
         </Content>
+      </List>
+
+      <List height={100} width={1000}>
+        <LinkPreviewNoToolTip url="/list">
+          <ArrowContent title="전체 공지사항 확인하기" animation="fadeInLeft" />
+        </LinkPreviewNoToolTip>
       </List>
 
       <List height={200} width={1000} justifyContent="space-between">
@@ -32,9 +40,15 @@ const Home = () => {
       </List>
 
       <List height={630} width={1000} justifyContent="center">
-        <Content title="활동 사진">
+        <Content title="활동 사진" animation="fadeInRight">
           <ImageSlider />
         </Content>
+      </List>
+
+      <List height={100} width={1000}>
+        <LinkPreviewNoToolTip url="/list">
+          <ArrowContent title="전체 활동사진 확인하기" animation="fadeInLeft" />
+        </LinkPreviewNoToolTip>
       </List>
 
       <List height="auto" width={1000}>
@@ -46,13 +60,13 @@ const Home = () => {
       <List height={200} width={1000} justifyContent="space-between">
         <Content title="연락하기" />
         <Content title="카카오톡">
-          <Link type="kakaotalk" url={KakaoTalkLink} />
+          <ContactUs imageType="kakaotalk" url={KakaoTalkLink} />
         </Content>
         <Content title="인스타그램">
-          <Link type="instagram" url={InstagramLink} />
+          <ContactUs imageType="instagram" url={InstagramLink} />
         </Content>
         <Content title="마이캠퍼스">
-          <Link type="mycampus" url={MyCampusLink} />
+          <ContactUs imageType="mycampus" url={MyCampusLink} />
         </Content>
       </List>
       <Footer />

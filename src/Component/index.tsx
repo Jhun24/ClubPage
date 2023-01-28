@@ -1,7 +1,10 @@
+import ArrowContent from './Content/ArrowContent';
 import Content from './Content';
 import Footer from './Footer';
 import ImageSlider from './ImageSlider';
-import Link from './Link';
+import ContactUs from './ContactUs';
+import LinkPreview from './LinkPreview';
+import LinkPreviewNoToolTip from './LinkPreview/LinkPreviewNoTooltip';
 import List from './List';
 import Nav from './Nav';
 import Poster from './Poster';
@@ -10,10 +13,13 @@ import SimpleText from './SimpleText';
 import Title from './Title';
 
 export {
+  ArrowContent,
   Content,
   Footer,
   ImageSlider,
-  Link,
+  ContactUs,
+  LinkPreview,
+  LinkPreviewNoToolTip,
   List,
   Nav,
   Poster,
