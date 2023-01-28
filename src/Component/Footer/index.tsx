@@ -5,7 +5,12 @@ import { Copyright } from '~/const';
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <p>@Copyright: {Copyright}</p>
+      <p>
+        @Copyright:
+        {Copyright.map((data) => {
+          return ` ${data},`;
+        })}
+      </p>
     </div>
   );
 };
