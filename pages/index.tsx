@@ -46,7 +46,7 @@ const Home = () => {
       </List>
 
       <List height={100} width={1000}>
-        <LinkPreviewNoToolTip url="/list">
+        <LinkPreviewNoToolTip url="/image">
           <ArrowContent title="전체 활동사진 확인하기" animation="fadeInLeft" />
         </LinkPreviewNoToolTip>
       </List>

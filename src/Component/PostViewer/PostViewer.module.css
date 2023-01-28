@@ -1,0 +1,45 @@
+.post_viewer_box {
+  width: 1200px;
+  height: auto;
+  min-height: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 4px 3px 1px rgba(0, 0, 0, 0.2);
+  padding-top: 60px;
+  margin:auto;
+}
+
+.post_viewer_box > h2 {
+  font-family: 'IBM-Bold';
+  font-size:36px;
+  height: 70px;
+  border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+.post_viewer_box > img {
+  width: 800px;
+  margin-left: 200px;
+  margin-top:20px;
+  margin-bottom: 36px;
+}
+
+.post_viewer_box > p {
+  font-family: 'IBM-Regular';
+  font-size: 18px;
+  line-height: 24px;
+  word-break: keep-all;
+}
+
+@media (max-width: 645px) {
+  .post_viewer_box {
+    width: 90%;
+    margin: auto;
+  }
+
+  .post_viewer_box > img {
+    width: 100%;
+    margin-left: 0;
+  }
+}
