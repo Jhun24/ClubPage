@@ -4,6 +4,7 @@ import {
   ImageSlider,
   Link,
   List,
+  Poster,
   SimpleListView,
   SimpleText,
   Title,
@@ -31,20 +32,26 @@ const Home = () => {
       </List>
 
       <List height={630} width={1000} justifyContent="center">
-        <Content title="활동 사진" animation="fadeIn">
+        <Content title="활동 사진">
           <ImageSlider />
         </Content>
       </List>
 
+      <List height="auto" width={1000}>
+        <Content title="지원하기">
+          <Poster />
+        </Content>
+      </List>
+
       <List height={200} width={1000} justifyContent="space-between">
-        <Content title="연락하기" animation="fadeIn" />
-        <Content title="카카오톡" animation="fadeIn">
+        <Content title="연락하기" />
+        <Content title="카카오톡">
           <Link type="kakaotalk" url={KakaoTalkLink} />
         </Content>
-        <Content title="인스타그램" animation="fadeIn">
+        <Content title="인스타그램">
           <Link type="instagram" url={InstagramLink} />
         </Content>
-        <Content title="마이캠퍼스" animation="fadeIn">
+        <Content title="마이캠퍼스">
           <Link type="mycampus" url={MyCampusLink} />
         </Content>
       </List>

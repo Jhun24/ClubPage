@@ -4,7 +4,7 @@ import styles from './List.module.css';
 
 interface ListProps {
   children: ReactNode;
-  height: number;
+  height: string | number;
   width: number;
   justifyContent?: string;
 }

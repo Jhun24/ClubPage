@@ -4,6 +4,7 @@ import ImageSlider from './ImageSlider';
 import Link from './Link';
 import List from './List';
 import Nav from './Nav';
+import Poster from './Poster';
 import SimpleListView from './SimpleList';
 import SimpleText from './SimpleText';
 import Title from './Title';
@@ -15,6 +16,7 @@ export {
   Link,
   List,
   Nav,
+  Poster,
   SimpleListView,
   SimpleText,
   Title,

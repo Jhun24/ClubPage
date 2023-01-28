@@ -1,0 +1,10 @@
+.post_box {
+  width: calc(100% - 40px);
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.post_box > img {
+  width: 400px;
+}

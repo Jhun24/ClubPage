@@ -1,0 +1,33 @@
+.poster_box {
+  width: 100%;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.poster_box .image_box {
+  width: 500px;
+  margin: auto;
+  box-shadow: 5px 4px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.poster_box > .image_box > img {
+  width: 100%;
+}
+
+.poster_box .poster_title {
+  text-decoration: none;
+  color: #0084FE;
+  font-family: 'IBM-SemiBold';
+  font-size: 26px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.poster_box .poster_content {
+  text-decoration: none;
+  color: black;
+  font-family: 'IBM-Light';
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
