@@ -31,3 +31,17 @@
   margin-left: 20px;
   margin-top: 5px;
 }
+
+@media (max-width: 645px) {
+  .poster_box .image_box {
+    width: 90%;
+  }
+  
+  .poster_box .poster_title {
+    font-size: 22px;
+  }
+  
+  .poster_box .poster_content {
+    font-size: 14px;
+  }
+}
