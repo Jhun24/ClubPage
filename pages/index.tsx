@@ -1,5 +1,4 @@
 import {
-  ArrowContent,
   Content,
   Footer,
   ImageSlider,
@@ -17,16 +16,17 @@ const Home = () => {
   return (
     <>
       <Title />
-      <List height={430} width={1000} justifyContent="center">
-        <Content title="공지 사항" animation="fadeInDown">
-          <SimpleListView />
+
+      <List height="auto" width={1000}>
+        <Content title="지원하기">
+          <Poster />
         </Content>
       </List>
 
-      <List height={100} width={1000}>
-        <LinkPreviewNoToolTip url="/list">
-          <ArrowContent title="전체 공지사항 확인하기" animation="fadeInLeft" />
-        </LinkPreviewNoToolTip>
+      <List height={430} width={1000} justifyContent="center">
+        <Content title="공지 사항" useArrow>
+          <SimpleListView />
+        </Content>
       </List>
 
       <List height={200} width={1000} justifyContent="space-between">
@@ -40,20 +40,8 @@ const Home = () => {
       </List>
 
       <List height={630} width={1000} justifyContent="center">
-        <Content title="활동 사진" animation="fadeInRight">
+        <Content title="활동 사진" animation="fadeInRight" useArrow>
           <ImageSlider />
-        </Content>
-      </List>
-
-      <List height={100} width={1000}>
-        <LinkPreviewNoToolTip url="/image">
-          <ArrowContent title="전체 활동사진 확인하기" animation="fadeInLeft" />
-        </LinkPreviewNoToolTip>
-      </List>
-
-      <List height="auto" width={1000}>
-        <Content title="지원하기">
-          <Poster />
         </Content>
       </List>
 

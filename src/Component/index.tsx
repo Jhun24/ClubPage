@@ -1,4 +1,3 @@
-import ArrowContent from './Content/ArrowContent';
 import Content from './Content';
 import Footer from './Footer';
 import ImageContent from './ImageViewer/ImageContent';
@@ -16,7 +15,6 @@ import SimpleText from './SimpleText';
 import Title from './Title';
 
 export {
-  ArrowContent,
   Content,
   Footer,
   ImageContent,
