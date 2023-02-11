@@ -3,7 +3,6 @@ import {
   Footer,
   ImageSlider,
   ContactUs,
-  LinkPreviewNoToolTip,
   List,
   Poster,
   SimpleListView,
@@ -24,7 +23,7 @@ const Home = () => {
       </List>
 
       <List height={430} width={1000} justifyContent="center">
-        <Content title="공지 사항" useArrow>
+        <Content title="공지 사항" url="/list" useArrow>
           <SimpleListView />
         </Content>
       </List>
@@ -40,7 +39,7 @@ const Home = () => {
       </List>
 
       <List height={630} width={1000} justifyContent="center">
-        <Content title="활동 사진" animation="fadeInRight" useArrow>
+        <Content title="활동 사진" url="/image" useArrow>
           <ImageSlider />
         </Content>
       </List>

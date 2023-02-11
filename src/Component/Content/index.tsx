@@ -1,5 +1,6 @@
 import { ReactElement } from 'react';
 import cn from 'classnames';
+import Link from 'next/link';
 
 import styles from './Content.module.css';
 
@@ -9,6 +10,7 @@ interface ContentProps {
   title: string;
   animation?: string;
   children?: ReactElement;
+  url?: string;
   useArrow?: boolean;
 }
 
@@ -16,6 +18,7 @@ const Content = ({
   title,
   animation = 'fadeIn',
   children,
+  url = '',
   useArrow = false,
 }: ContentProps) => {
   return (
@@ -23,7 +26,9 @@ const Content = ({
       {useArrow ? (
         <div className={styles.content_flex_header}>
           <h1 className={styles.content_title}>{title}</h1>
-          <ArrowToRight />
+          <Link href={url}>
+            <ArrowToRight />
+          </Link>
         </div>
       ) : (
         <h1 className={styles.content_title}>{title}</h1>
