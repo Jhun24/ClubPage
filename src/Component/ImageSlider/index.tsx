@@ -12,21 +12,15 @@ const URL = [
 
 const ImageSlider = () => {
   return (
-    <>
-      <div className={styles.image_slider_box}>
-        <SimpleImageSlider
-          width={900}
-          height={500}
-          images={URL}
-          showBullets
-          showNavs
-        />
-      </div>
-      <div className={styles.image_slider_is_mobile}>
-        <ArrowToRight />
-        <h2>사진 확인하기</h2>
-      </div>
-    </>
+    <div className={styles.image_slider_box}>
+      <SimpleImageSlider
+        width={900}
+        height={500}
+        images={URL}
+        showBullets
+        showNavs
+      />
+    </div>
   );
 };
 

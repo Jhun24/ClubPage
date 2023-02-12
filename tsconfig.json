@@ -23,6 +23,7 @@
     "typeRoots": ["./src/Type", "types"],
     "paths": {
       "~/assets": ["Asset"],
+      "~/api":["Api"],
       "~/const": ["Const"],
       "~/components": ["Component"],
       "~/hook":["Hook"],

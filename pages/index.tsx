@@ -1,3 +1,7 @@
+import { useQuery } from 'react-query';
+import Skeleton from 'react-loading-skeleton';
+
+import { getRecuritment, getPoster } from '~/api';
 import {
   Content,
   Footer,
@@ -12,6 +16,48 @@ import {
 import { InstagramLink, KakaoTalkLink, MyCampusLink } from '~/const';
 
 const Home = () => {
+  const PosterQuery = () => {
+    const { isLoading, isError, data } = useQuery('poster', getPoster);
+  };
+
+  const useRecuritmentQuery = () => {
+    const { isLoading, isError, data, error } = useQuery(
+      'recuritment',
+      getRecuritment
+    );
+
+    if (isLoading) {
+      return (
+        <>
+          <Skeleton
+            style={{
+              marginLeft: 20,
+              width: 300,
+            }}
+          />
+          <Skeleton
+            style={{
+              marginLeft: 20,
+              width: 300,
+            }}
+          />
+          <Skeleton
+            style={{
+              marginLeft: 20,
+              width: 300,
+            }}
+          />
+        </>
+      );
+    }
+
+    if (isError) {
+      return <SimpleText text="Error: External Server Error" />;
+    }
+
+    return <SimpleText text="현재 모집중이 아닙니다" />;
+  };
+
   return (
     <>
       <Title />
@@ -30,7 +76,7 @@ const Home = () => {
 
       <List height={200} width={1000} justifyContent="space-between">
         <Content title="모집 여부" animation="fadeInLeft">
-          <SimpleText text="현재 모집중이 아닙니다" />
+          {useRecuritmentQuery()}
         </Content>
 
         <Content title="현재 일정" animation="fadeInRight">

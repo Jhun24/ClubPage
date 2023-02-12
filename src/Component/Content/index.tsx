@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import { ReactElement, ReactNode } from 'react';
 import cn from 'classnames';
 import Link from 'next/link';
 
@@ -9,7 +9,7 @@ import { ArrowToRight } from '~/assets';
 interface ContentProps {
   title: string;
   animation?: string;
-  children?: ReactElement;
+  children?: ReactElement | ReactNode;
   url?: string;
   useArrow?: boolean;
 }

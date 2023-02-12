@@ -45,9 +45,4 @@
     line-height: 60px;
     width: calc(100% - 20px);
   }
-
-  .image_viewer_photo_box{
-    display: block;
-    gap: 0px;
-  }
 }
